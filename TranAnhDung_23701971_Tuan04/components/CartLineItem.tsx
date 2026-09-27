@@ -5,7 +5,7 @@ import { CartItem } from "../data";
 export function CartLineItem({ item }: { item: CartItem }) {
   return (
     <View style={styles.row}>
-      <Image source={{ uri: item.book.cover }} style={styles.thumb} />
+      <Image source={item.book.cover} style={styles.thumb} />
 
       <Text style={styles.title} numberOfLines={1}>
         {item.book.title}

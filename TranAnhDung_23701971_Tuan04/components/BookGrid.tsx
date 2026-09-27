@@ -23,7 +23,7 @@ export function BookGrid({ books, onPressBook }: { books: Book[]; onPressBook: (
           onPress={() => onPressBook(book.id)}
         >
           <View style={styles.coverWrap}>
-            <Image source={{ uri: book.cover }} style={styles.cover} />
+            <Image source={book.cover} style={styles.cover} />
             <DiscountBadge discountPercent={book.discountPercent} isNew={book.isNew} />
           </View>
           <Text style={styles.title} numberOfLines={2}>

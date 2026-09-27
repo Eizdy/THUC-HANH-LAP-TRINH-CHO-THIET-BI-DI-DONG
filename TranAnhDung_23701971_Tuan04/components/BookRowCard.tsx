@@ -10,7 +10,7 @@ const COVER_HEIGHT = 110;
 export function BookRowCard({ book }: { book: Book }) {
   return (
     <View style={[styles.card, { alignItems: CARD_ALIGN_ITEMS }]}>
-      <Image source={{ uri: book.cover }} style={styles.cover} />
+      <Image source={book.cover} style={styles.cover} />
 
       <View style={styles.info}>
         <View>

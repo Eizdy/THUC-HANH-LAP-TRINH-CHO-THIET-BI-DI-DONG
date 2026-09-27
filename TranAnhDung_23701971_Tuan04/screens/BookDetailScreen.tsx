@@ -19,7 +19,7 @@ export function BookDetailScreen({
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.scrollContent}>
         <Image
-          source={{ uri: book.cover }}
+          source={book.cover}
           style={styles.cover}
         />
         <Text style={styles.title}>{book.title}</Text>
